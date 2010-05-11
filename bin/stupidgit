@@ -13,6 +13,9 @@ except NameError:
     # we are in py2exe => no __file__
     pass
 
+import wxversion
+wxversion.select('2.8')
+
 # Run stupidgit
 import stupidgit_gui.run
 stupidgit_gui.run.main()
